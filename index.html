@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CC Solution Group — practical business solutions built around your goals.">
+  <title>CC Solution Group | Business Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+<link rel="canonical" href="https://ccsolutiongroup.com/"></head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home"><img src="cc-solution-group-logo.png" alt="CC Solution Group logo"><span>CC Solution Group</span></a>
+      <button class="menu" aria-label="Open menu">☰</button>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">How We Help</a>
+        <a class="nav-cta" href="#contact">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">CC SOLUTION GROUP</p>
+          <h1>Smart solutions.<br><span>Real results.</span></h1>
+          <p class="lead">We help businesses solve problems, improve operations, and move forward with confidence.</p>
+          <div class="buttons">
+            <a class="button primary" href="#contact">Let's Talk</a>
+            <a class="button secondary" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-glow"></div>
+          <p class="card-label">YOUR GOALS</p>
+          <h2>We turn challenges into opportunities.</h2>
+          <div class="mini-stat"><strong>01</strong><span>Understand the challenge</span></div>
+          <div class="mini-stat"><strong>02</strong><span>Build the right solution</span></div>
+          <div class="mini-stat"><strong>03</strong><span>Deliver measurable value</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2 class="section-title">Solutions designed around your business.</h2>
+        <div class="cards">
+          <article class="service"><div class="icon">01</div><h3>Business Consulting</h3><p>Practical guidance to identify opportunities, solve operational challenges, and make better business decisions.</p></article>
+          <article class="service"><div class="icon">02</div><h3>Process Improvement</h3><p>Streamline workflows, reduce friction, and build systems that help your team work smarter.</p></article>
+          <article class="service"><div class="icon">03</div><h3>Custom Solutions</h3><p>Flexible solutions tailored to your specific goals, customers, operations, and growth plans.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section dark">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">ABOUT CC SOLUTION GROUP</p>
+          <h2 class="section-title">A partner focused on getting things done.</h2>
+        </div>
+        <div class="about-copy">
+          <p>CC Solution Group is built around a simple idea: businesses need solutions that work in the real world.</p>
+          <p>We take the time to understand where you are, where you want to go, and what is getting in the way. Then we focus on clear, practical next steps.</p>
+          <a href="tel:7607927932" class="text-link">Call 760-792-7932 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <p class="eyebrow">OUR APPROACH</p>
+        <h2 class="section-title">Simple. Focused. Results-oriented.</h2>
+        <div class="process">
+          <div><span>1</span><h3>Listen</h3><p>We learn about your business, priorities, and challenges.</p></div>
+          <div><span>2</span><h3>Plan</h3><p>We identify the highest-value opportunities and create a practical plan.</p></div>
+          <div><span>3</span><h3>Execute</h3><p>We turn the plan into action and keep the focus on results.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Ready to find a better solution?</h2>
+          <p>Tell us what you're working on and we'll start the conversation.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:info@ccsolutiongroup.com">Email CC Solution Group</a>
+          <p class="small">760-792-7932 &nbsp;·&nbsp; info@ccsolutiongroup.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div><a class="brand" href="#home"><img src="cc-solution-group-logo.png" alt="CC Solution Group logo"><span>CC Solution Group</span></a><p>Business solutions built around your goals.</p></div>
+      <p>© 2026 CC Solution Group. All rights reserved. &nbsp;·&nbsp; ccsolutiongroup.com</p>
+    </div>
+  </footer>
+  <script>
+    const menu = document.querySelector('.menu');
+    const nav = document.querySelector('nav');
+    menu.addEventListener('click', () => nav.classList.toggle('open'));
+    document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
