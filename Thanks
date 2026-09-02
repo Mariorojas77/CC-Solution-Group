@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Request Received | CC Solution Group</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="thank-you-page">
+    <div class="thank-you-card">
+      <img src="cc-solution-group-logo.png" alt="CC Solution Group logo">
+      <p class="eyebrow">QUOTE REQUEST RECEIVED</p>
+      <h1>Thank you for your project inquiry.</h1>
+      <p>We’ve received your plastic fabrication quote request and will review the details you submitted.</p>
+      <a class="button primary" href="/">Return to CC Solution Group</a>
+    </div>
+  </main>
+</body>
+</html>
