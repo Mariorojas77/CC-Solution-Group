@@ -123,13 +123,13 @@
         </div>
 
         <form class="quote-form"
-              action="https://formsubmit.co/mrojas@ccsolutiongroup.com"
+              action="https://usebasin.com/f/f1924fdd4e56"
               method="POST"
-              enctype="multipart/form-data">
-          <input type="hidden" name="_subject" value="New Plastic Fabrication Quote Request">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://ccsolutiongroup.com/thanks.html">
-          <input type="hidden" name="_url" value="https://ccsolutiongroup.com/">
+              enctype="multipart/form-data"
+              accept-charset="UTF-8"
+              data-basin-form
+              data-basin-success-action="render"
+              data-basin-capture-url="true">
 
           <div class="form-grid">
             <div class="field"><label for="name">Name *</label><input id="name" name="Name" type="text" required></div>
@@ -168,8 +168,8 @@
 
             <div class="field full-width">
               <label for="attachment">Drawing / File Upload</label>
-              <input id="attachment" name="attachment" type="file" accept=".pdf,.dwg,.dxf,.step,.stp,.igs,.iges,.jpg,.jpeg,.png">
-              <small>PDF, CAD or image files. Maximum total upload size: 10 MB.</small>
+              <input id="attachment" name="attachments[]" type="file" multiple accept=".pdf,.dwg,.dxf,.step,.stp,.igs,.iges,.jpg,.jpeg,.png">
+              <small>Upload PDF, CAD or image files. Basin supports files up to 100 MB each.</small>
             </div>
           </div>
 
@@ -178,6 +178,16 @@
             <p>Your information is used only to review and respond to your project request.</p>
           </div>
         </form>
+
+        <div class="w-form-done" style="display:none; margin-top:22px; padding:22px; border-radius:14px; background:#ffffff; border:1px solid #b9dfc6;">
+          <strong style="display:block; font-size:1.1rem; margin-bottom:6px;">Thank you for your project inquiry.</strong>
+          <span>Your quote request and uploaded files were submitted successfully. CC Solution Group will review the project details and follow up with you.</span>
+        </div>
+
+        <div class="w-form-fail" style="display:none; margin-top:22px; padding:22px; border-radius:14px; background:#ffffff; border:1px solid #e1b8b8;">
+          <strong style="display:block; font-size:1.1rem; margin-bottom:6px;">We couldn't submit your request.</strong>
+          <span>Please try again, or email your project directly to mrojas@ccsolutiongroup.com.</span>
+        </div>
 
         <div class="direct-contact">
           <strong>Prefer email or phone?</strong>
@@ -199,6 +209,7 @@
     </div>
   </footer>
 
+  <script src="https://js.usebasin.com/v2.11.1.min.js" defer></script>
   <script>
     const menu = document.querySelector('.menu');
     const nav = document.querySelector('nav');
