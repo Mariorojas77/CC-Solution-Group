@@ -33,11 +33,9 @@
         <div>
           <p class="eyebrow">CUSTOM PLASTIC FABRICATION</p>
           <h1>Built to spec.<br><span>Made to perform.</span></h1>
-          <p class="lead">
-            CC Solution Group helps customers turn drawings, concepts and production needs into custom plastic components and fabricated assemblies.
-          </p>
+          <p class="lead">CC Solution Group helps customers turn drawings, concepts and production needs into custom plastic components and fabricated assemblies.</p>
           <div class="buttons">
-            <a class="button primary" href="mailto:mrojas@ccsolutiongroup.com?subject=Plastic%20Fabrication%20Quote%20Request">Request a Quote</a>
+            <a class="button primary" href="#contact">Request a Quote</a>
             <a class="button secondary" href="#capabilities">View Capabilities</a>
           </div>
           <div class="hero-points">
@@ -46,7 +44,6 @@
             <span>Responsive project support</span>
           </div>
         </div>
-
         <div class="hero-card">
           <div class="card-glow"></div>
           <p class="card-label">FROM DRAWING TO DELIVERY</p>
@@ -62,10 +59,7 @@
       <div class="container">
         <p class="eyebrow">FABRICATION CAPABILITIES</p>
         <h2 class="section-title">Custom plastic solutions for real-world applications.</h2>
-        <p class="section-intro">
-          From one-off prototypes to repeat production, we support fabricated plastic components that need clean workmanship, practical material selection and dependable execution.
-        </p>
-
+        <p class="section-intro">From one-off prototypes to repeat production, we support fabricated plastic components that need clean workmanship, practical material selection and dependable execution.</p>
         <div class="cards capability-grid">
           <article class="service"><div class="icon">01</div><h3>CNC Routing & Machining</h3><p>Custom profiles, cutouts, holes, pockets and precision features produced from sheet and plate materials.</p></article>
           <article class="service"><div class="icon">02</div><h3>Cut-to-Size Parts</h3><p>Panels, blanks, strips and custom shapes prepared to drawing dimensions for production or assembly.</p></article>
@@ -82,9 +76,7 @@
         <div>
           <p class="eyebrow">MATERIALS</p>
           <h2 class="section-title">The right plastic for the job.</h2>
-          <p class="dark-copy">
-            Material choice affects appearance, strength, chemical resistance, impact performance, machinability and cost. We help align material selection with the application.
-          </p>
+          <p class="dark-copy">Material choice affects appearance, strength, chemical resistance, impact performance, machinability and cost. We help align material selection with the application.</p>
         </div>
         <div class="material-list">
           <div><strong>Acrylic / PMMA</strong><span>Clear parts, displays, covers and polished visual applications.</span></div>
@@ -115,28 +107,83 @@
           <h2 class="section-title">A responsive partner from quote through delivery.</h2>
         </div>
         <div class="about-copy">
-          <p>
-            Plastic fabrication projects often involve more than simply cutting material. Drawings, tolerances, material availability, packaging, production quantities and timing all matter.
-          </p>
-          <p>
-            CC Solution Group focuses on making that process easier—communicating clearly, helping define the right solution and keeping the project moving.
-          </p>
+          <p>Plastic fabrication projects often involve more than simply cutting material. Drawings, tolerances, material availability, packaging, production quantities and timing all matter.</p>
+          <p>CC Solution Group focuses on making that process easier—communicating clearly, helping define the right solution and keeping the project moving.</p>
           <a href="tel:7607927932" class="text-link">Call Mario at 760-792-7932 →</a>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="container contact-box">
-        <div>
+    <section id="contact" class="contact quote-section">
+      <div class="container">
+        <div class="quote-heading">
           <p class="eyebrow">REQUEST A QUOTE</p>
-          <h2>Have a plastic fabrication project?</h2>
-          <p>Send your drawing, dimensions, material preference and quantity. We’ll start with the details that matter.</p>
+          <h2>Tell us about your plastic fabrication project.</h2>
+          <p>Send the project details below. Include a drawing, sketch or PDF when available so we can review the requirements more accurately.</p>
         </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:mrojas@ccsolutiongroup.com?subject=Plastic%20Fabrication%20Quote%20Request">Email Your Project</a>
-          <a class="phone-link" href="tel:7607927932">760-792-7932</a>
-          <p class="small">mrojas@ccsolutiongroup.com</p>
+
+        <form class="quote-form"
+              action="https://formsubmit.co/mrojas@ccsolutiongroup.com"
+              method="POST"
+              enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New Plastic Fabrication Quote Request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://ccsolutiongroup.com/thanks.html">
+          <input type="hidden" name="_url" value="https://ccsolutiongroup.com/">
+
+          <div class="form-grid">
+            <div class="field"><label for="name">Name *</label><input id="name" name="Name" type="text" required></div>
+            <div class="field"><label for="company">Company</label><input id="company" name="Company" type="text"></div>
+            <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" name="Phone" type="tel"></div>
+
+            <div class="field">
+              <label for="material">Material</label>
+              <select id="material" name="Material">
+                <option value="">Select a material</option>
+                <option>Acrylic / PMMA</option><option>Polycarbonate</option><option>HDPE</option>
+                <option>UHMW</option><option>PVC</option><option>PETG</option><option>ABS</option>
+                <option>Other / Need recommendation</option>
+              </select>
+            </div>
+
+            <div class="field"><label for="thickness">Thickness</label><input id="thickness" name="Thickness" type="text" placeholder='Example: 1/4", 3/8", 1/2"'></div>
+            <div class="field"><label for="quantity">Quantity</label><input id="quantity" name="Quantity" type="number" min="1"></div>
+            <div class="field"><label for="dimensions">Overall Dimensions</label><input id="dimensions" name="Dimensions" type="text" placeholder='Example: 24" x 36"'></div>
+
+            <div class="field full-width">
+              <label for="process">Fabrication Needed</label>
+              <select id="process" name="Fabrication Needed">
+                <option value="">Select a process</option>
+                <option>CNC Routing / Machining</option><option>Cut-to-Size Parts</option><option>Bending / Forming</option>
+                <option>Bonding / Assembly</option><option>Guard / Enclosure</option><option>Prototype</option>
+                <option>Production Run</option><option>Not Sure / Need Guidance</option>
+              </select>
+            </div>
+
+            <div class="field full-width">
+              <label for="details">Project Details *</label>
+              <textarea id="details" name="Project Details" rows="6" required placeholder="Describe the part, application, tolerances, finish, target delivery date, or anything else we should know."></textarea>
+            </div>
+
+            <div class="field full-width">
+              <label for="attachment">Drawing / File Upload</label>
+              <input id="attachment" name="attachment" type="file" accept=".pdf,.dwg,.dxf,.step,.stp,.igs,.iges,.jpg,.jpeg,.png">
+              <small>PDF, CAD or image files. Maximum total upload size: 10 MB.</small>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button class="button primary submit-button" type="submit">Submit Quote Request</button>
+            <p>Your information is used only to review and respond to your project request.</p>
+          </div>
+        </form>
+
+        <div class="direct-contact">
+          <strong>Prefer email or phone?</strong>
+          <a href="mailto:mrojas@ccsolutiongroup.com">mrojas@ccsolutiongroup.com</a>
+          <span>•</span>
+          <a href="tel:7607927932">760-792-7932</a>
         </div>
       </div>
     </section>
@@ -145,10 +192,7 @@
   <footer>
     <div class="container footer">
       <div>
-        <a class="brand footer-brand" href="#home">
-          <img src="cc-solution-group-logo.png" alt="CC Solution Group logo">
-          <span>CC Solution Group</span>
-        </a>
+        <a class="brand footer-brand" href="#home"><img src="cc-solution-group-logo.png" alt="CC Solution Group logo"><span>CC Solution Group</span></a>
         <p>Custom plastic fabrication support.</p>
       </div>
       <p>© 2026 CC Solution Group. All rights reserved.</p>
@@ -163,4 +207,3 @@
   </script>
 </body>
 </html>
-
