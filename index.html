@@ -8,6 +8,45 @@
   <title>CC Solution Group | Custom Plastic Fabrication</title>
   <link rel="canonical" href="https://ccsolutiongroup.com/">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .visual-capabilities{
+      background:linear-gradient(145deg,#06121f,#071c31);
+      color:#fff;
+    }
+    .visual-capabilities .eyebrow{color:#4aa9ff}
+    .visual-capabilities .section-title{color:#fff}
+    .visual-capabilities .section-intro{color:#c6d4e2;max-width:900px}
+    .capability-showcase{
+      margin:38px 0 0;
+      border-radius:22px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.13);
+      box-shadow:0 28px 70px rgba(0,0,0,.30);
+      background:#071421;
+    }
+    .capability-showcase img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+    .upload-guidance{
+      display:flex;
+      flex-direction:column;
+      gap:5px;
+      margin-top:2px;
+      padding:13px 14px;
+      border-radius:10px;
+      background:#f5f9fd;
+      border:1px solid #dbe7f1;
+      color:#42566b;
+      font-size:.88rem;
+    }
+    .upload-guidance strong{color:#18324f}
+    .upload-guidance span{color:#56697d}
+    .upload-guidance small{color:#718093}
+  </style>
+
 </head>
 <body>
   <header class="site-header">
@@ -68,6 +107,25 @@
           <article class="service"><div class="icon">05</div><h3>Guards & Enclosures</h3><p>Machine guards, covers, shields, housings and protective fabricated components for commercial and industrial use.</p></article>
           <article class="service"><div class="icon">06</div><h3>Prototype & Production Support</h3><p>Support for first articles, short runs and repeat programs with attention to cost, quality and lead time.</p></article>
         </div>
+      </div>
+    </section>
+
+
+    <section id="fabrication-gallery" class="section visual-capabilities">
+      <div class="container">
+        <div class="visual-capabilities-heading">
+          <p class="eyebrow">CUSTOM PLASTIC FABRICATION</p>
+          <h2 class="section-title">From precision machining to large custom-made products.</h2>
+          <p class="section-intro">
+            Explore examples of the types of plastic fabrication solutions CC Solution Group can support,
+            including CNC machining, cylinders, domes, bonded assemblies, spheres and large custom-made products.
+          </p>
+        </div>
+
+        <figure class="capability-showcase">
+          <img src="plastic-fabrication-capabilities.png"
+               alt="CC Solution Group plastic fabrication capabilities including CNC machining, cylinders, domes, acrylic bonding, spheres and large custom-made products">
+        </figure>
       </div>
     </section>
 
@@ -169,7 +227,11 @@
             <div class="field full-width">
               <label for="attachment">Drawing / File Upload</label>
               <input id="attachment" name="attachments[]" type="file" multiple accept=".pdf,.dwg,.dxf,.step,.stp,.igs,.iges,.jpg,.jpeg,.png">
-              <small>Upload PDF, CAD or image files. Basin supports files up to 100 MB each.</small>
+              <div class="upload-guidance">
+                <strong>Recommended files:</strong> PDF, DXF, DWG, STEP, JPG or PNG.
+                <span>For the fastest quote, include dimensions, material, thickness, quantity, tolerances and desired delivery date when known.</span>
+                <small>Multiple files may be uploaded. Basin supports files up to 100 MB each.</small>
+              </div>
             </div>
           </div>
 
